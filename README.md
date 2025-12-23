@@ -17,9 +17,3 @@ Automated system to extract text from images, optimize keywords with AI, and fin
 
 Input: Book cover image → Output: Relevant study materials
 
-## 🚀 Quick Start
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/YOUR_USERNAME/DA2_OCR. git
-cd DA2_OCR
