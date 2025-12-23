@@ -1,0 +1,42 @@
+#========================
+# AI & OCR CONFIG for DA2ocr
+#========================
+
+# (Bắt buộc) API key Gemini AI
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+
+# Đường dẫn tới Tesseract trên máy bạn
+# (Windows dạng: C:/Program Files/Tesseract-OCR/tesseract.exe)
+TESSERACT_PATH=C:/Program Files/Tesseract-OCR/tesseract.exe
+
+# Ngôn ngữ OCR, nên để "vie+eng" cho tiếng Việt và tiếng Anh
+OCR_LANGUAGES=vie+eng
+
+#========================
+# SEARCH CONFIG
+#========================
+
+# Quốc gia/vùng cho tìm kiếm DuckDuckGo
+SEARCH_REGION=vn-vi
+# Tối đa kết quả tìm kiếm trả về từ 1 truy vấn
+SEARCH_MAX_RESULTS=20
+# Số lượng kết quả sẽ lưu ra output (top-n)
+SEARCH_RETURN_COUNT=5
+# Số lần thử lại nếu search lỗi
+SEARCH_MAX_RETRIES=2
+# Thời gian (giây) giữa các lần retry search
+SEARCH_RETRY_DELAY=2
+
+#========================
+# Dữ liệu vào/ra
+#========================
+
+# Thư mục chứa ảnh đầu vào
+INPUT_FOLDER=./image_input
+# Thư mục chứa kết quả
+OUTPUT_FOLDER=./output
+
+#========================
+# Cấu hình khác (nếu bạn muốn bổ sung)
+# LOG_LEVEL=INFO
+# SUPPORTED_FORMATS=.png,.jpg,.jpeg
