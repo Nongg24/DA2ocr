@@ -1,0 +1,56 @@
+2025-12-23 10:34:11 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 10:34:11 - OCR - INFO - Processing:  giaitich.png
+2025-12-23 10:34:13 - OCR - INFO - ✅ Extracted 48 characters
+2025-12-23 10:34:16 - OCR - INFO - Processing:  image_input.jpg
+2025-12-23 10:34:17 - OCR - INFO - ✅ Extracted 1456 characters
+2025-12-23 10:34:20 - OCR - INFO - Processing:  Untitled.jpg
+2025-12-23 10:34:20 - OCR - INFO - ✅ Extracted 77 characters
+2025-12-23 10:51:57 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 10:51:57 - OCR - INFO - Processing:  giaitich.png
+2025-12-23 10:51:57 - OCR - INFO - ✅ Extracted 48 characters
+2025-12-23 10:52:04 - OCR - INFO - Processing:  image_input.jpg
+2025-12-23 10:52:06 - OCR - INFO - ✅ Extracted 1456 characters
+2025-12-23 10:52:13 - OCR - INFO - Processing:  Untitled.jpg
+2025-12-23 10:52:14 - OCR - INFO - ✅ Extracted 77 characters
+2025-12-23 10:58:17 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 10:58:17 - OCR - INFO - Processing:  giaitich.png
+2025-12-23 10:58:17 - OCR - INFO - ✅ Extracted 48 characters
+2025-12-23 10:58:20 - OCR - INFO - Processing:  image_input.jpg
+2025-12-23 10:58:22 - OCR - INFO - ✅ Extracted 1456 characters
+2025-12-23 10:58:29 - OCR - INFO - Processing:  Untitled.jpg
+2025-12-23 10:58:29 - OCR - INFO - ✅ Extracted 77 characters
+2025-12-23 10:59:48 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 10:59:48 - OCR - INFO - Processing:  giaitich.png
+2025-12-23 10:59:49 - OCR - INFO - ✅ Extracted 48 characters
+2025-12-23 10:59:57 - OCR - INFO - Processing:  image_input.jpg
+2025-12-23 10:59:58 - OCR - INFO - ✅ Extracted 1456 characters
+2025-12-23 11:00:03 - OCR - INFO - Processing:  Untitled.jpg
+2025-12-23 11:00:04 - OCR - INFO - ✅ Extracted 77 characters
+2025-12-23 11:00:21 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:00:21 - OCR - INFO - Processing:  giaitich.png
+2025-12-23 11:00:22 - OCR - INFO - ✅ Extracted 48 characters
+2025-12-23 11:00:25 - OCR - INFO - Processing:  image_input.jpg
+2025-12-23 11:00:26 - OCR - INFO - ✅ Extracted 1456 characters
+2025-12-23 11:00:33 - OCR - INFO - Processing:  Untitled.jpg
+2025-12-23 11:00:33 - OCR - INFO - ✅ Extracted 77 characters
+2025-12-23 11:04:05 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:04:05 - OCR - INFO - Processing:  giaitich.png
+2025-12-23 11:04:07 - OCR - INFO - ✅ Extracted 47 characters
+2025-12-23 11:04:12 - OCR - INFO - Processing:  image_input.jpg
+2025-12-23 11:04:14 - OCR - INFO - ✅ Extracted 1460 characters
+2025-12-23 11:04:17 - OCR - INFO - Processing:  Untitled.jpg
+2025-12-23 11:04:17 - OCR - INFO - ✅ Extracted 77 characters
+2025-12-23 11:20:39 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:20:39 - OCR - INFO - Processing:   giaitich.png
+2025-12-23 11:20:40 - OCR - INFO - ✅ Extracted 134 characters (method: Raw)
+2025-12-23 11:20:45 - OCR - INFO - Processing:   image_input.jpg
+2025-12-23 11:20:47 - OCR - INFO - ✅ Extracted 1458 characters (method: Raw)
+2025-12-23 11:20:50 - OCR - INFO - Processing:   Untitled.jpg
+2025-12-23 11:20:51 - OCR - INFO - ✅ Extracted 125 characters (method: Preprocessed)
+2025-12-23 11:29:09 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:29:09 - OCR - INFO - Processing:   giaitich.png
+2025-12-23 11:29:10 - OCR - INFO - ✅ Extracted 134 characters (method: Raw)
+2025-12-23 11:29:19 - OCR - INFO - Processing:   image_input.jpg
+2025-12-23 11:29:21 - OCR - INFO - ✅ Extracted 1458 characters (method: Raw)
+2025-12-23 11:29:26 - OCR - INFO - Processing:   Untitled.jpg
+2025-12-23 11:29:26 - OCR - INFO - ✅ Extracted 125 characters (method: Preprocessed)

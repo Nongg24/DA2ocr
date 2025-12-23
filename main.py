@@ -48,53 +48,51 @@ class ImageProcessor:
         urls: List[str]
     ) -> bool:
         """
-        Save processing results to file
+        Save processing results to file with proper UTF-8 encoding
         
-        Args: 
+        Args:  
             filename: Original image filename
             raw_text: OCR extracted text
             keyword: AI filtered keyword
             urls: Search results URLs
             
-        Returns: 
+        Returns:  
             True if successful, False otherwise
         """
         output_file = OUTPUT_FOLDER / f"{filename}.txt"
         
         try:
-            with open(output_file, "w", encoding="utf-8") as f:
+            # Use UTF-8 with BOM for proper Vietnamese display in Windows
+            with open(output_file, "w", encoding="utf-8-sig") as f:
                 f.write("="*70 + "\n")
-                f.write(f" 📄 KẾT QUẢ XỬ LÝ:  {filename}\n")
-                f.write(f" 🕒 Thời gian: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                f.write(f" KẾT QUẢ XỬ LÝ: {filename}\n")
+                f.write(f" Thời gian: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
                 f.write("="*70 + "\n\n")
                 
-                f. write("┌" + "─"*68 + "┐\n")
-                f.write("│ [1] VĂN BẢN GỐC (OCR)" + " "*46 + "│\n")
-                f.write("└" + "─"*68 + "┘\n")
+                f.write("[1] VĂN BẢN GỐC (OCR)\n")
+                f.write("-"*70 + "\n")
                 f.write(f"{raw_text}\n\n")
                 
-                f.write("┌" + "─"*68 + "┐\n")
-                f.write("│ [2] TỪ KHÓA TÌM KIẾM (AI)" + " "*42 + "│\n")
-                f.write("└" + "─"*68 + "┘\n")
+                f.write("[2] TỪ KHÓA TÌM KIẾM (AI)\n")
+                f.write("-"*70 + "\n")
                 f.write(f"{keyword}\n\n")
                 
-                f.write("┌" + "─"*68 + "┐\n")
-                f.write("│ [3] KẾT QUẢ TÌM KIẾM" + " "*47 + "│\n")
-                f.write("└" + "─"*68 + "┘\n")
+                f. write("[3] KẾT QUẢ TÌM KIẾM\n")
+                f.write("-"*70 + "\n")
                 
-                if urls:
+                if urls: 
                     for i, url in enumerate(urls, 1):
                         f.write(f"{i}. {url}\n")
                 else:
-                    f.write("⚠️ Không tìm thấy kết quả nào.\n")
+                    f.write("Không tìm thấy kết quả nào.\n")
                 
-                f. write("\n" + "="*70 + "\n")
-                f.write("✅ Xử lý hoàn tất!\n")
+                f.write("\n" + "="*70 + "\n")
+                f.write("Xử lý hoàn tất!\n")
             
-            logger.info(f"💾 Saved:  {output_file. name}")
+            logger.info(f"💾 Saved: {output_file. name}")
             return True
             
-        except Exception as e: 
+        except Exception as e:  
             logger.error(f"❌ Failed to save results: {e}", exc_info=True)
             return False
     
@@ -102,7 +100,7 @@ class ImageProcessor:
         """
         Process single image through complete pipeline
         
-        Args: 
+        Args:  
             image_path: Path to image file
             
         Returns: 
@@ -116,14 +114,14 @@ class ImageProcessor:
         try:
             # Step 1: OCR
             raw_text = self.ocr. extract_text(image_path)
-            if not raw_text: 
+            if not raw_text:  
                 msg = "⚠️ No text extracted, skipping"
                 logger.warning(msg)
                 return False, msg
             
             # Step 2: AI Filter
             keyword = self.ai_filter.extract_keyword(raw_text)
-            if not keyword:
+            if not keyword: 
                 keyword = raw_text  # Fallback
             
             # Step 3: Search
@@ -132,7 +130,7 @@ class ImageProcessor:
             # Step 4: Save results
             success = self.save_results(filename, raw_text, keyword, urls)
             
-            if success: 
+            if success:  
                 return True, "✅ Success"
             else:
                 return False, "❌ Failed to save"
@@ -146,15 +144,15 @@ class ImageProcessor:
         """
         Process all images in input folder
         
-        Args: 
+        Args:  
             delay: Delay between processing images (seconds)
             
-        Returns: 
+        Returns:  
             Tuple of (successful_count, total_count)
         """
         # Find all image files
         image_files = [
-            f for f in INPUT_FOLDER. iterdir()
+            f for f in INPUT_FOLDER.iterdir()
             if f.is_file() and f.suffix.lower() in SUPPORTED_FORMATS
         ]
         
@@ -213,10 +211,10 @@ def main():
         logger. warning("\n⚠️ Process interrupted by user")
         return 130
         
-    except Exception as e: 
+    except Exception as e:  
         logger.error(f"\n❌ Fatal error: {e}", exc_info=True)
         return 1
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     sys.exit(main())

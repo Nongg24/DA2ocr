@@ -10,11 +10,6 @@ __pycache__/
 env/
 venv/
 
-# Project specific
-image_input/
-output/
-logs/
-
 # IDE
 .vscode/
 .idea/

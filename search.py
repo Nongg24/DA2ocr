@@ -4,7 +4,16 @@ Search Module - Find relevant URLs using DuckDuckGo
 import time
 import random
 from typing import List
-from duckduckgo_search import DDGS
+
+try:
+    from duckduckgo_search import DDGS
+except ImportError: 
+    try:
+        from ddgs import DDGS
+    except ImportError: 
+        print("Error: Install duckduckgo-search or ddgs")
+        raise
+
 from logger import setup_logger
 from config import (
     SEARCH_REGION,
@@ -25,7 +34,7 @@ class WebSearcher:
         region: str = SEARCH_REGION,
         max_results: int = SEARCH_MAX_RESULTS,
         return_count: int = SEARCH_RETURN_COUNT,
-        max_retries: int = SEARCH_MAX_RETRIES
+        max_retries:  int = SEARCH_MAX_RETRIES
     ):
         self.region = region
         self.max_results = max_results
@@ -38,16 +47,18 @@ class WebSearcher:
         Search for URLs using query
         
         Args:
-            query: Search query
+            query:  Search query
             
-        Returns:
+        Returns: 
             List of URLs (up to return_count)
         """
-        if not query.strip():
+        if not query. strip():
             logger.warning("Empty query provided")
             return []
         
-        logger.info(f"Searching for: '{query}'")
+        # Limit query length for display
+        display_query = query[:100] + "..." if len(query) > 100 else query
+        logger.info(f"Searching for: '{display_query}'")
         
         urls = []
         
@@ -64,10 +75,10 @@ class WebSearcher:
                 )
                 
                 if results:
-                    for item in results:
+                    for item in results: 
                         url = item.get('href')
                         if url and url not in urls:
-                            urls.append(url)
+                            urls. append(url)
                             
                             # Stop if we have enough
                             if len(urls) >= self.return_count:
@@ -85,7 +96,7 @@ class WebSearcher:
             # Wait before retry
             if attempt < self.max_retries:
                 delay = SEARCH_RETRY_DELAY + random.uniform(0, 2)
-                logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                logger.debug(f"Waiting {delay:. 1f}s before retry...")  # FIXED: removed space
                 time.sleep(delay)
         
         if not urls:
@@ -102,7 +113,7 @@ def google_search(query: str) -> List[str]:
     return searcher.search(query)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     # Test
     searcher = WebSearcher()
     

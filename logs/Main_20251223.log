@@ -1,0 +1,369 @@
+2025-12-23 10:34:11 - Main - INFO - ============================================================
+2025-12-23 10:34:11 - Main - INFO - Image Processor initialized
+2025-12-23 10:34:11 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 10:34:11 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 10:34:11 - Main - INFO - ============================================================
+2025-12-23 10:34:11 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 10:34:11 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 10:34:11 - Main - INFO - 
+[1/3]
+2025-12-23 10:34:11 - Main - INFO - 
+============================================================
+2025-12-23 10:34:11 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 10:34:11 - Main - INFO - ============================================================
+2025-12-23 10:34:14 - Main - ERROR - ❌ Error:  Format specifier missing precision
+Traceback (most recent call last):
+  File "D:\DA2_OCR\projecet\main.py", line 130, in process_image
+    urls = self.searcher.search(keyword)
+  File "D:\DA2_OCR\projecet\search.py", line 88, in search
+    logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                           ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-12-23 10:34:16 - Main - INFO - 
+[2/3]
+2025-12-23 10:34:16 - Main - INFO - 
+============================================================
+2025-12-23 10:34:16 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 10:34:16 - Main - INFO - ============================================================
+2025-12-23 10:34:18 - Main - ERROR - ❌ Error:  Format specifier missing precision
+Traceback (most recent call last):
+  File "D:\DA2_OCR\projecet\main.py", line 130, in process_image
+    urls = self.searcher.search(keyword)
+  File "D:\DA2_OCR\projecet\search.py", line 88, in search
+    logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                           ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-12-23 10:34:20 - Main - INFO - 
+[3/3]
+2025-12-23 10:34:20 - Main - INFO - 
+============================================================
+2025-12-23 10:34:20 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 10:34:20 - Main - INFO - ============================================================
+2025-12-23 10:34:21 - Main - ERROR - ❌ Error:  Format specifier missing precision
+Traceback (most recent call last):
+  File "D:\DA2_OCR\projecet\main.py", line 130, in process_image
+    urls = self.searcher.search(keyword)
+  File "D:\DA2_OCR\projecet\search.py", line 88, in search
+    logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                           ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-12-23 10:34:21 - Main - INFO - 
+============================================================
+2025-12-23 10:34:21 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 10:34:21 - Main - INFO - ============================================================
+2025-12-23 10:34:21 - Main - INFO - ✅ Successful: 0/3
+2025-12-23 10:34:21 - Main - INFO - ❌ Failed: 3/3
+2025-12-23 10:34:21 - Main - INFO - ⏱️  Time elapsed: 9.97s
+2025-12-23 10:34:21 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 10:34:21 - Main - INFO - ============================================================
+2025-12-23 10:34:21 - Main - WARNING - 
+⚠️ No images were successfully processed
+2025-12-23 10:51:57 - Main - INFO - ============================================================
+2025-12-23 10:51:57 - Main - INFO - Image Processor initialized
+2025-12-23 10:51:57 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 10:51:57 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 10:51:57 - Main - INFO - ============================================================
+2025-12-23 10:51:57 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 10:51:57 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 10:51:57 - Main - INFO - 
+[1/3]
+2025-12-23 10:51:57 - Main - INFO - 
+============================================================
+2025-12-23 10:51:57 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 10:51:57 - Main - INFO - ============================================================
+2025-12-23 10:52:03 - Main - INFO - 💾 Saved:  giaitich.png.txt
+2025-12-23 10:52:04 - Main - INFO - 
+[2/3]
+2025-12-23 10:52:04 - Main - INFO - 
+============================================================
+2025-12-23 10:52:04 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 10:52:04 - Main - INFO - ============================================================
+2025-12-23 10:52:12 - Main - INFO - 💾 Saved:  image_input.jpg.txt
+2025-12-23 10:52:13 - Main - INFO - 
+[3/3]
+2025-12-23 10:52:13 - Main - INFO - 
+============================================================
+2025-12-23 10:52:13 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 10:52:13 - Main - INFO - ============================================================
+2025-12-23 10:52:20 - Main - INFO - 💾 Saved:  Untitled.jpg.txt
+2025-12-23 10:52:20 - Main - INFO - 
+============================================================
+2025-12-23 10:52:20 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 10:52:20 - Main - INFO - ============================================================
+2025-12-23 10:52:20 - Main - INFO - ✅ Successful: 3/3
+2025-12-23 10:52:20 - Main - INFO - ❌ Failed: 0/3
+2025-12-23 10:52:20 - Main - INFO - ⏱️  Time elapsed: 23.39s
+2025-12-23 10:52:20 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 10:52:20 - Main - INFO - ============================================================
+2025-12-23 10:52:20 - Main - INFO - 
+🎉 Processing complete!
+2025-12-23 10:58:17 - Main - INFO - ============================================================
+2025-12-23 10:58:17 - Main - INFO - Image Processor initialized
+2025-12-23 10:58:17 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 10:58:17 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 10:58:17 - Main - INFO - ============================================================
+2025-12-23 10:58:17 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 10:58:17 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 10:58:17 - Main - INFO - 
+[1/3]
+2025-12-23 10:58:17 - Main - INFO - 
+============================================================
+2025-12-23 10:58:17 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 10:58:17 - Main - INFO - ============================================================
+2025-12-23 10:58:19 - Main - ERROR - ❌ Error:  Format specifier missing precision
+Traceback (most recent call last):
+  File "D:\DA2_OCR\projecet\main.py", line 130, in process_image
+    urls = self.searcher.search(keyword)
+  File "D:\DA2_OCR\projecet\search.py", line 88, in search
+    logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                           ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-12-23 10:58:20 - Main - INFO - 
+[2/3]
+2025-12-23 10:58:20 - Main - INFO - 
+============================================================
+2025-12-23 10:58:20 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 10:58:20 - Main - INFO - ============================================================
+2025-12-23 10:58:27 - Main - INFO - 💾 Saved:  image_input.jpg.txt
+2025-12-23 10:58:29 - Main - INFO - 
+[3/3]
+2025-12-23 10:58:29 - Main - INFO - 
+============================================================
+2025-12-23 10:58:29 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 10:58:29 - Main - INFO - ============================================================
+2025-12-23 10:58:30 - Main - ERROR - ❌ Error:  Format specifier missing precision
+Traceback (most recent call last):
+  File "D:\DA2_OCR\projecet\main.py", line 130, in process_image
+    urls = self.searcher.search(keyword)
+  File "D:\DA2_OCR\projecet\search.py", line 88, in search
+    logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                           ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-12-23 10:58:30 - Main - INFO - 
+============================================================
+2025-12-23 10:58:30 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 10:58:30 - Main - INFO - ============================================================
+2025-12-23 10:58:30 - Main - INFO - ✅ Successful: 1/3
+2025-12-23 10:58:30 - Main - INFO - ❌ Failed: 2/3
+2025-12-23 10:58:30 - Main - INFO - ⏱️  Time elapsed: 13.55s
+2025-12-23 10:58:30 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 10:58:30 - Main - INFO - ============================================================
+2025-12-23 10:58:30 - Main - INFO - 
+🎉 Processing complete!
+2025-12-23 10:59:48 - Main - INFO - ============================================================
+2025-12-23 10:59:48 - Main - INFO - Image Processor initialized
+2025-12-23 10:59:48 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 10:59:48 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 10:59:48 - Main - INFO - ============================================================
+2025-12-23 10:59:48 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 10:59:48 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 10:59:48 - Main - INFO - 
+[1/3]
+2025-12-23 10:59:48 - Main - INFO - 
+============================================================
+2025-12-23 10:59:48 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 10:59:48 - Main - INFO - ============================================================
+2025-12-23 10:59:55 - Main - INFO - 💾 Saved: giaitich.png.txt
+2025-12-23 10:59:57 - Main - INFO - 
+[2/3]
+2025-12-23 10:59:57 - Main - INFO - 
+============================================================
+2025-12-23 10:59:57 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 10:59:57 - Main - INFO - ============================================================
+2025-12-23 11:00:02 - Main - INFO - 💾 Saved: image_input.jpg.txt
+2025-12-23 11:00:03 - Main - INFO - 
+[3/3]
+2025-12-23 11:00:03 - Main - INFO - 
+============================================================
+2025-12-23 11:00:03 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 11:00:03 - Main - INFO - ============================================================
+2025-12-23 11:00:09 - Main - INFO - 💾 Saved: Untitled.jpg.txt
+2025-12-23 11:00:09 - Main - INFO - 
+============================================================
+2025-12-23 11:00:09 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 11:00:09 - Main - INFO - ============================================================
+2025-12-23 11:00:09 - Main - INFO - ✅ Successful: 3/3
+2025-12-23 11:00:09 - Main - INFO - ❌ Failed: 0/3
+2025-12-23 11:00:09 - Main - INFO - ⏱️  Time elapsed: 20.85s
+2025-12-23 11:00:09 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:00:09 - Main - INFO - ============================================================
+2025-12-23 11:00:09 - Main - INFO - 
+🎉 Processing complete!
+2025-12-23 11:00:21 - Main - INFO - ============================================================
+2025-12-23 11:00:21 - Main - INFO - Image Processor initialized
+2025-12-23 11:00:21 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 11:00:21 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 11:00:21 - Main - INFO - ============================================================
+2025-12-23 11:00:21 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 11:00:21 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:00:21 - Main - INFO - 
+[1/3]
+2025-12-23 11:00:21 - Main - INFO - 
+============================================================
+2025-12-23 11:00:21 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 11:00:21 - Main - INFO - ============================================================
+2025-12-23 11:00:23 - Main - ERROR - ❌ Error:  Format specifier missing precision
+Traceback (most recent call last):
+  File "D:\DA2_OCR\projecet\main.py", line 128, in process_image
+    urls = self.searcher.search(keyword)
+  File "D:\DA2_OCR\projecet\search.py", line 88, in search
+    logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                           ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-12-23 11:00:25 - Main - INFO - 
+[2/3]
+2025-12-23 11:00:25 - Main - INFO - 
+============================================================
+2025-12-23 11:00:25 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 11:00:25 - Main - INFO - ============================================================
+2025-12-23 11:00:31 - Main - INFO - 💾 Saved: image_input.jpg.txt
+2025-12-23 11:00:33 - Main - INFO - 
+[3/3]
+2025-12-23 11:00:33 - Main - INFO - 
+============================================================
+2025-12-23 11:00:33 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 11:00:33 - Main - INFO - ============================================================
+2025-12-23 11:00:34 - Main - ERROR - ❌ Error:  Format specifier missing precision
+Traceback (most recent call last):
+  File "D:\DA2_OCR\projecet\main.py", line 128, in process_image
+    urls = self.searcher.search(keyword)
+  File "D:\DA2_OCR\projecet\search.py", line 88, in search
+    logger.debug(f"Waiting {delay:. 1f}s before retry...")
+                           ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-12-23 11:00:34 - Main - INFO - 
+============================================================
+2025-12-23 11:00:34 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 11:00:34 - Main - INFO - ============================================================
+2025-12-23 11:00:34 - Main - INFO - ✅ Successful: 1/3
+2025-12-23 11:00:34 - Main - INFO - ❌ Failed: 2/3
+2025-12-23 11:00:35 - Main - INFO - ⏱️  Time elapsed: 13.50s
+2025-12-23 11:00:35 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:00:35 - Main - INFO - ============================================================
+2025-12-23 11:00:35 - Main - INFO - 
+🎉 Processing complete!
+2025-12-23 11:04:05 - Main - INFO - ============================================================
+2025-12-23 11:04:05 - Main - INFO - Image Processor initialized
+2025-12-23 11:04:05 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 11:04:05 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 11:04:05 - Main - INFO - ============================================================
+2025-12-23 11:04:05 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 11:04:05 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:04:05 - Main - INFO - 
+[1/3]
+2025-12-23 11:04:05 - Main - INFO - 
+============================================================
+2025-12-23 11:04:05 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 11:04:05 - Main - INFO - ============================================================
+2025-12-23 11:04:10 - Main - INFO - 💾 Saved: giaitich.png.txt
+2025-12-23 11:04:12 - Main - INFO - 
+[2/3]
+2025-12-23 11:04:12 - Main - INFO - 
+============================================================
+2025-12-23 11:04:12 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 11:04:12 - Main - INFO - ============================================================
+2025-12-23 11:04:15 - Main - INFO - 💾 Saved: image_input.jpg.txt
+2025-12-23 11:04:17 - Main - INFO - 
+[3/3]
+2025-12-23 11:04:17 - Main - INFO - 
+============================================================
+2025-12-23 11:04:17 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 11:04:17 - Main - INFO - ============================================================
+2025-12-23 11:04:20 - Main - INFO - 💾 Saved: Untitled.jpg.txt
+2025-12-23 11:04:20 - Main - INFO - 
+============================================================
+2025-12-23 11:04:20 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 11:04:20 - Main - INFO - ============================================================
+2025-12-23 11:04:20 - Main - INFO - ✅ Successful: 3/3
+2025-12-23 11:04:20 - Main - INFO - ❌ Failed: 0/3
+2025-12-23 11:04:20 - Main - INFO - ⏱️  Time elapsed: 15.56s
+2025-12-23 11:04:20 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:04:20 - Main - INFO - ============================================================
+2025-12-23 11:04:20 - Main - INFO - 
+🎉 Processing complete!
+2025-12-23 11:20:39 - Main - INFO - ============================================================
+2025-12-23 11:20:39 - Main - INFO - Image Processor initialized
+2025-12-23 11:20:39 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 11:20:39 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 11:20:39 - Main - INFO - ============================================================
+2025-12-23 11:20:39 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 11:20:39 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:20:39 - Main - INFO - 
+[1/3]
+2025-12-23 11:20:39 - Main - INFO - 
+============================================================
+2025-12-23 11:20:39 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 11:20:39 - Main - INFO - ============================================================
+2025-12-23 11:20:43 - Main - INFO - 💾 Saved: giaitich.png.txt
+2025-12-23 11:20:45 - Main - INFO - 
+[2/3]
+2025-12-23 11:20:45 - Main - INFO - 
+============================================================
+2025-12-23 11:20:45 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 11:20:45 - Main - INFO - ============================================================
+2025-12-23 11:20:48 - Main - INFO - 💾 Saved: image_input.jpg.txt
+2025-12-23 11:20:50 - Main - INFO - 
+[3/3]
+2025-12-23 11:20:50 - Main - INFO - 
+============================================================
+2025-12-23 11:20:50 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 11:20:50 - Main - INFO - ============================================================
+2025-12-23 11:20:54 - Main - INFO - 💾 Saved: Untitled.jpg.txt
+2025-12-23 11:20:54 - Main - INFO - 
+============================================================
+2025-12-23 11:20:54 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 11:20:54 - Main - INFO - ============================================================
+2025-12-23 11:20:54 - Main - INFO - ✅ Successful: 3/3
+2025-12-23 11:20:54 - Main - INFO - ❌ Failed: 0/3
+2025-12-23 11:20:54 - Main - INFO - ⏱️  Time elapsed: 15.15s
+2025-12-23 11:20:54 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:20:54 - Main - INFO - ============================================================
+2025-12-23 11:20:54 - Main - INFO - 
+🎉 Processing complete!
+2025-12-23 11:29:09 - Main - INFO - ============================================================
+2025-12-23 11:29:09 - Main - INFO - Image Processor initialized
+2025-12-23 11:29:09 - Main - INFO - Input folder: D:\DA2_OCR\projecet\image_input
+2025-12-23 11:29:09 - Main - INFO - Output folder: D:\DA2_OCR\projecet\output
+2025-12-23 11:29:09 - Main - INFO - ============================================================
+2025-12-23 11:29:09 - Main - INFO - 
+🎯 Found 3 image(s) to process
+2025-12-23 11:29:09 - Main - INFO - 📁 Results will be saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:29:09 - Main - INFO - 
+[1/3]
+2025-12-23 11:29:09 - Main - INFO - 
+============================================================
+2025-12-23 11:29:09 - Main - INFO - 🖼️  Processing: giaitich.png
+2025-12-23 11:29:09 - Main - INFO - ============================================================
+2025-12-23 11:29:17 - Main - INFO - 💾 Saved: giaitich.png.txt
+2025-12-23 11:29:19 - Main - INFO - 
+[2/3]
+2025-12-23 11:29:19 - Main - INFO - 
+============================================================
+2025-12-23 11:29:19 - Main - INFO - 🖼️  Processing: image_input.jpg
+2025-12-23 11:29:19 - Main - INFO - ============================================================
+2025-12-23 11:29:24 - Main - INFO - 💾 Saved: image_input.jpg.txt
+2025-12-23 11:29:26 - Main - INFO - 
+[3/3]
+2025-12-23 11:29:26 - Main - INFO - 
+============================================================
+2025-12-23 11:29:26 - Main - INFO - 🖼️  Processing: Untitled.jpg
+2025-12-23 11:29:26 - Main - INFO - ============================================================
+2025-12-23 11:29:29 - Main - INFO - 💾 Saved: Untitled.jpg.txt
+2025-12-23 11:29:29 - Main - INFO - 
+============================================================
+2025-12-23 11:29:29 - Main - INFO - 📊 PROCESSING SUMMARY
+2025-12-23 11:29:29 - Main - INFO - ============================================================
+2025-12-23 11:29:29 - Main - INFO - ✅ Successful: 3/3
+2025-12-23 11:29:29 - Main - INFO - ❌ Failed: 0/3
+2025-12-23 11:29:29 - Main - INFO - ⏱️  Time elapsed: 20.05s
+2025-12-23 11:29:29 - Main - INFO - 📁 Results saved to: D:\DA2_OCR\projecet\output
+2025-12-23 11:29:29 - Main - INFO - ============================================================
+2025-12-23 11:29:29 - Main - INFO - 
+🎉 Processing complete!
