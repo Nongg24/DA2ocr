@@ -86,3 +86,5 @@ OUTPUT_FOLDER=./output
 ```
 
 ---
+
+<p>vibecode project</p>
