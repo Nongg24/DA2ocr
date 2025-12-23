@@ -54,3 +54,41 @@
 2025-12-23 11:29:21 - OCR - INFO - ✅ Extracted 1458 characters (method: Raw)
 2025-12-23 11:29:26 - OCR - INFO - Processing:   Untitled.jpg
 2025-12-23 11:29:26 - OCR - INFO - ✅ Extracted 125 characters (method: Preprocessed)
+2025-12-23 11:32:52 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:32:52 - OCR - INFO - Processing:   giaitich.png
+2025-12-23 11:32:52 - OCR - INFO - ✅ Extracted 134 characters (method: Raw)
+2025-12-23 11:32:57 - OCR - INFO - Processing:   image_input.jpg
+2025-12-23 11:32:59 - OCR - INFO - ✅ Extracted 1458 characters (method: Raw)
+2025-12-23 11:33:02 - OCR - INFO - Processing:   Untitled.jpg
+2025-12-23 11:33:02 - OCR - INFO - ✅ Extracted 125 characters (method: Preprocessed)
+2025-12-23 11:37:06 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:37:06 - OCR - INFO - Processing:   giaitich.png
+2025-12-23 11:37:07 - OCR - INFO - ✅ Extracted 134 characters (method: Raw)
+2025-12-23 11:37:11 - OCR - INFO - Processing:   image_input.jpg
+2025-12-23 11:37:13 - OCR - INFO - ✅ Extracted 1458 characters (method: Raw)
+2025-12-23 11:37:17 - OCR - INFO - Processing:   test.png
+2025-12-23 11:37:18 - OCR - INFO - ✅ Extracted 63 characters (method: Preprocessed)
+2025-12-23 11:37:21 - OCR - INFO - Processing:   Untitled.jpg
+2025-12-23 11:37:22 - OCR - INFO - ✅ Extracted 125 characters (method: Preprocessed)
+2025-12-23 11:53:10 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:53:10 - OCR - INFO - Processing:   book.png
+2025-12-23 11:53:11 - OCR - INFO - ✅ Extracted 24 characters (method: Preprocessed)
+2025-12-23 11:53:15 - OCR - INFO - Processing:   giaitich.png
+2025-12-23 11:53:16 - OCR - INFO - ✅ Extracted 134 characters (method: Raw)
+2025-12-23 11:53:23 - OCR - INFO - Processing:   image_input.jpg
+2025-12-23 11:53:25 - OCR - INFO - ✅ Extracted 1458 characters (method: Raw)
+2025-12-23 11:53:31 - OCR - INFO - Processing:   test.png
+2025-12-23 11:53:32 - OCR - INFO - ✅ Extracted 63 characters (method: Preprocessed)
+2025-12-23 11:53:36 - OCR - INFO - Processing:   Untitled.jpg
+2025-12-23 11:53:37 - OCR - INFO - ✅ Extracted 125 characters (method: Preprocessed)
+2025-12-23 11:56:24 - OCR - INFO - OCR Processor initialized with languages: vie+eng
+2025-12-23 11:56:24 - OCR - INFO - Processing:   book.png
+2025-12-23 11:56:24 - OCR - INFO - ✅ Extracted 24 characters (method: Preprocessed)
+2025-12-23 11:56:32 - OCR - INFO - Processing:   giaitich.png
+2025-12-23 11:56:33 - OCR - INFO - ✅ Extracted 134 characters (method: Raw)
+2025-12-23 11:56:39 - OCR - INFO - Processing:   image_input.jpg
+2025-12-23 11:56:42 - OCR - INFO - ✅ Extracted 1458 characters (method: Raw)
+2025-12-23 11:56:44 - OCR - INFO - Processing:   test.png
+2025-12-23 11:56:45 - OCR - INFO - ✅ Extracted 63 characters (method: Preprocessed)
+2025-12-23 11:56:50 - OCR - INFO - Processing:   Untitled.jpg
+2025-12-23 11:56:51 - OCR - INFO - ✅ Extracted 125 characters (method: Preprocessed)

@@ -6,7 +6,7 @@ import random
 from typing import List
 
 try:
-    from duckduckgo_search import DDGS
+    from ddgs import DDGS
 except ImportError: 
     try:
         from ddgs import DDGS

@@ -1,6 +1,6 @@
 ﻿======================================================================
  KẾT QUẢ XỬ LÝ: giaitich.png
- Thời gian: 2025-12-23 11:29:17
+ Thời gian: 2025-12-23 11:56:38
 ======================================================================
 
 [1] VĂN BẢN GỐC (OCR)
@@ -36,9 +36,9 @@ A or _ QC KHO lo 4 Khoa Toán - Tin học ĐHQG-HCM Fac of Math Computer Science
 ----------------------------------------------------------------------
 1. https://www.math.hcmus.edu.vn/
 2. https://www.facebook.com/khoatoantinhoc/
-3. https://sites.google.com/view/math-hcmus-edu-vn-giaitich
-4. https://www.math.hcmus.edu.vn/images/GiaiTich.pdf
-5. https://www.studocu.vn/vn/document/university-of-science-vnuhcm/cong-nghe-thong-tin/calculus-1-hcmus-vi-tich-phan-1b/85461315
+3. https://sites.google.com/view/math-hcmus-edu-vn-giaitich/
+4. https://hcmus.edu.vn/tag/khoa-toan-tin-hoc/
+5. https://www.math.hcmus.edu.vn/tin-tức/thông-tin-toán-tin-học/490-mở-đào-tạo-trình-độ-đại-học-ngành-toán-tin
 
 ======================================================================
 Xử lý hoàn tất!

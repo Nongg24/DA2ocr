@@ -1,6 +1,6 @@
 ﻿======================================================================
  KẾT QUẢ XỬ LÝ: image_input.jpg
- Thời gian: 2025-12-23 11:29:24
+ Thời gian: 2025-12-23 11:56:43
 ======================================================================
 
 [1] VĂN BẢN GỐC (OCR)
@@ -44,11 +44,11 @@ CÔNG TY CỎ PHÀN THÉP CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM HÒA PH�
 
 [3] KẾT QUẢ TÌM KIẾM
 ----------------------------------------------------------------------
-1. https://vi.wikipedia.org/wiki/Tập_đoàn_Hòa_Phát
-2. https://hoaphatdungquat.vn/
+1. https://hoaphatdungquat.vn/
+2. https://www.studocu.vn/vn/document/long-an-university-of-economics-and-industry/information-technology/10-pl01-qt0102-mau-van-ban-hanh-chinh-giay-uy-quyen-10/109393819
 3. https://masothue.com/4300793861-cong-ty-co-phan-thep-hoa-phat-dung-quat
-4. https://baochinhphu.vn/thu-tuong-tham-thep-hoa-phat-dong-vien-san-xuat-ray-duong-sat-toc-do-cao-102250209210343753.htm
-5. https://www.hoaphat.com.vn/en
+4. https://file.hoaphat.com.vn/hoaphat-com-vn/uploads/CBTT-thanh-lap-cong-ty-Hoa-phat-Dung-Quat.pdf
+5. https://tlu.edu.vn/Portals/0/2020-8/591HPDQ-P_NS.pdf?ver=2020-08-20-072449-917
 
 ======================================================================
 Xử lý hoàn tất!

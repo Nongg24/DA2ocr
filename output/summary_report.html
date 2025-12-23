@@ -1,88 +1,71 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OCR Results Summary</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing:  border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 20px;
             min-height: 100vh;
         }
-        
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
         .header {
             background: white;
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        
         h1 {
-            color: #667eea;
+            color: #667eea; 
             margin-bottom: 10px;
             font-size: 32px;
         }
-        
         .timestamp {
-            color: #666;
+            color: #666; 
             font-size: 14px;
         }
-        
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
             margin-top: 20px;
         }
-        
         .stat-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
         }
-        
         .stat-number {
             font-size: 36px;
-            font-weight: bold;
+            font-weight:  bold;
             margin-bottom: 5px;
         }
-        
-        .stat-label {
+        .stat-label { 
             font-size: 14px;
             opacity: 0.9;
         }
-        
         .result-card {
             background: white;
             padding: 30px;
             margin-bottom: 20px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
             transition: transform 0.3s;
         }
-        
         .result-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        
         .result-title {
             color: #667eea;
             font-size: 24px;
@@ -91,11 +74,9 @@
             padding-bottom: 15px;
             border-bottom: 3px solid #667eea;
         }
-        
         .section {
             margin: 25px 0;
         }
-        
         .section-title {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -105,7 +86,6 @@
             margin-bottom: 15px;
             font-size: 16px;
         }
-        
         .content {
             padding: 20px;
             background: #f9f9f9;
@@ -118,12 +98,10 @@
             overflow-y: auto;
             border-left: 4px solid #667eea;
         }
-        
         .url-list {
             list-style: none;
             padding: 0;
         }
-        
         .url-list li {
             padding: 15px;
             margin: 10px 0;
@@ -132,23 +110,19 @@
             border-left: 4px solid #667eea;
             transition: all 0.3s;
         }
-        
         .url-list li:hover {
             background: #e0e0e0;
             transform: translateX(5px);
         }
-        
         .url-list a {
             color: #667eea;
             text-decoration: none;
             word-break: break-all;
             font-size: 14px;
         }
-        
-        .url-list a:hover {
+        .url-list a:hover { 
             text-decoration: underline;
         }
-        
         .footer {
             background: white;
             padding: 20px;
@@ -157,7 +131,6 @@
             margin-top: 20px;
             color: #666;
         }
-        
         .no-results {
             color: #999;
             font-style: italic;
@@ -166,25 +139,51 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="header">
             <h1>📊 Báo Cáo Kết Quả OCR</h1>
-            <div class="timestamp">⏰ Tạo lúc: 23/12/2025 11:29:29</div>
+            <div class="timestamp">⏰ Tạo lúc: 23/12/2025 11:56:53</div>
             <div class="stats">
                 <div class="stat-box">
-                    <div class="stat-number">3</div>
+                    <div class="stat-number">5</div>
                     <div class="stat-label">Ảnh đã xử lý</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">1701</div>
+                    <div class="stat-number">1788</div>
                     <div class="stat-label">Ký tự trích xuất</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">15</div>
+                    <div class="stat-number">25</div>
                     <div class="stat-label">Liên kết tìm được</div>
                 </div>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="result-title">📄 book.png</div>
+
+            <div class="section">
+                <div class="section-title">🔍 [1] VĂN BẢN GỐC (OCR)</div>
+                <div class="content">ECHOES OF
+TOMORROW
+.. @</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">🎯 [2] TỪ KHÓA TÌM KIẾM</div>
+                <div class="content">ECHOES OF TOMORROW</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">🔗 [3] KẾT QUẢ TÌM KIẾM</div>
+                <ul class="url-list">
+                    <li><strong>1.</strong> <a href="https://zingmp3.vn/bai-hat/Echoes-of-Tomorrow-BongsalonMusic/Z8AF8FOU.html" target="_blank">https://zingmp3.vn/bai-hat/Echoes-of-Tomorrow-BongsalonMusic/Z8AF8FOU.html</a></li>
+                    <li><strong>2.</strong> <a href="https://www.nhaccuatui.com/bai-hat/echoes-of-tomorrow-nrs.yekV5jJEgfXj.html" target="_blank">https://www.nhaccuatui.com/bai-hat/echoes-of-tomorrow-nrs.yekV5jJEgfXj.html</a></li>
+                    <li><strong>3.</strong> <a href="https://www.signalspace.com/echoes-of-tomorrow" target="_blank">https://www.signalspace.com/echoes-of-tomorrow</a></li>
+                    <li><strong>4.</strong> <a href="https://www.youtube.com/@EchoesFromTomorrow" target="_blank">https://www.youtube.com/@EchoesFromTomorrow</a></li>
+                    <li><strong>5.</strong> <a href="https://www.youtube.com/watch?v=MiFHn-BHHDg" target="_blank">https://www.youtube.com/watch?v=MiFHn-BHHDg</a></li>
+                </ul>
             </div>
         </div>
 
@@ -193,8 +192,21 @@
 
             <div class="section">
                 <div class="section-title">🔍 [1] VĂN BẢN GỐC (OCR)</div>
-                <div class="content">@ A» © or =, = _ QC KHO¿ lo 4 ¢ Khoa Toán - Tin học. ĐHQG-HCM. Fac. of Math, & Computer Science Bộ môn Giải tích VI TÍCH PHÂN 1
-                </div>
+                <div class="content">@
+A»
+©
+or
+=,
+=
+_
+QC KHO¿
+lo 4
+¢
+Khoa Toán - Tin học.
+ĐHQG-HCM. Fac. of Math, & Computer Science
+Bộ môn Giải tích
+VI TÍCH PHÂN
+1</div>
             </div>
 
             <div class="section">
@@ -207,9 +219,9 @@
                 <ul class="url-list">
                     <li><strong>1.</strong> <a href="https://www.math.hcmus.edu.vn/" target="_blank">https://www.math.hcmus.edu.vn/</a></li>
                     <li><strong>2.</strong> <a href="https://www.facebook.com/khoatoantinhoc/" target="_blank">https://www.facebook.com/khoatoantinhoc/</a></li>
-                    <li><strong>3.</strong> <a href="https://sites.google.com/view/math-hcmus-edu-vn-giaitich" target="_blank">https://sites.google.com/view/math-hcmus-edu-vn-giaitich</a></li>
-                    <li><strong>4.</strong> <a href="https://www.math.hcmus.edu.vn/images/GiaiTich.pdf" target="_blank">https://www.math.hcmus.edu.vn/images/GiaiTich.pdf</a></li>
-                    <li><strong>5.</strong> <a href="https://www.studocu.vn/vn/document/university-of-science-vnuhcm/cong-nghe-thong-tin/calculus-1-hcmus-vi-tich-phan-1b/85461315" target="_blank">https://www.studocu.vn/vn/document/university-of-science-vnuhcm/cong-nghe-thong-tin/calculus-1-hcmus-vi-tich-phan-1b/85461315</a></li>
+                    <li><strong>3.</strong> <a href="https://sites.google.com/view/math-hcmus-edu-vn-giaitich/" target="_blank">https://sites.google.com/view/math-hcmus-edu-vn-giaitich/</a></li>
+                    <li><strong>4.</strong> <a href="https://hcmus.edu.vn/tag/khoa-toan-tin-hoc/" target="_blank">https://hcmus.edu.vn/tag/khoa-toan-tin-hoc/</a></li>
+                    <li><strong>5.</strong> <a href="https://www.math.hcmus.edu.vn/tin-tức/thông-tin-toán-tin-học/490-mở-đào-tạo-trình-độ-đại-học-ngành-toán-tin" target="_blank">https://www.math.hcmus.edu.vn/tin-tức/thông-tin-toán-tin-học/490-mở-đào-tạo-trình-độ-đại-học-ngành-toán-tin</a></li>
                 </ul>
             </div>
         </div>
@@ -219,13 +231,28 @@
 
             <div class="section">
                 <div class="section-title">🔍 [1] VĂN BẢN GỐC (OCR)</div>
-                <div class="content">CÔNG TY CỎ PHÀN THÉP. CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM HÒA PHÁT DUNG QUÁT Độc lập — Tự do - Hạnh phúc Số: 2373/2024/HPDQ-P.NS Quảng Ngãi, ngày 27 tháng 12 năm 2024 'V/v thông tin tuyên dung Kính gửi: Khoa Công nghệ vật liệu - Đại học
-                    Bách khoa -Đại học Quốc gia TP. Hồ Chí Minh Lời đầu tiên, Công ty Cổ phần Thép Hòa Phát Dung Quất (gọi tắt là Công ty) trân trọng cảm ơn Quý Đơn vị thời gian qua đã luôn quan tâm hỗ trợ, đồng hành cùng Công ty trong quá trình tuyển
-                    dụng và tạo việc làm cho sinh viên sau khi tốt nghiệp. Sau gần tám năm kẻ từ ngày thành lập, Công ty Cổ phần Thép Hòa Phát Dung Quất đã có hơn 17.300 nhân sự đang làm việc với thu nhập ổn định. Trong năm 2025, để đáp ứng nhu cầu sản
-                    xuất và triển khai các dự án mở rộng, Công ty cần tuyển dụng trên 3.000 nhân sự với nhiều ngành nghề, trình độ chuyên môn (chỉ tiết tai Thông báo tuyển dụng kèm theo). Nhằm đáp ứng nguồn nhân lực chất lượng cao làm việc tại Công ty,
-                    đồng thời tạo cơ hội việc làm cho sinh viên sau tốt nghiệp, bằng công văn nay, Céng ty kinh đề nghị Quý Đơn vị tiếp tục hỗ trợ Công ty trong việc chia sẻ và tuyên truyền thông tin tuyển dụng, cơ hội việc làm tại Công ty đến sinh viên
-                    qua Website, mạng xã hội và các kênh thông tin khác của Quý Đơn vị. Moi thông tin phản hồi và hỗ trợ xin liên hệ với Công ty qua: Số điện thoại: 02553.620.630 (Phím 1) Địa chỉ Email: tuyendungdungquat@hoaphat.com.vn Rat mong nhận được
-                    sự hỗ trợ từ Quý Đơn vị. Trân trọng cảm ơn./.</div>
+                <div class="content">CÔNG TY CỎ PHÀN THÉP. CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+HÒA PHÁT DUNG QUÁT Độc lập — Tự do - Hạnh phúc
+Số: 2373/2024/HPDQ-P.NS Quảng Ngãi, ngày 27 tháng 12 năm 2024
+'V/v thông tin tuyên dung
+Kính gửi: Khoa Công nghệ vật liệu - Đại học Bách khoa -Đại học Quốc gia TP. Hồ Chí Minh
+Lời đầu tiên, Công ty Cổ phần Thép Hòa Phát Dung Quất (gọi tắt là Công ty) trân
+trọng cảm ơn Quý Đơn vị thời gian qua đã luôn quan tâm hỗ trợ, đồng hành cùng Công ty
+trong quá trình tuyển dụng và tạo việc làm cho sinh viên sau khi tốt nghiệp.
+Sau gần tám năm kẻ từ ngày thành lập, Công ty Cổ phần Thép Hòa Phát Dung Quất đã
+có hơn 17.300 nhân sự đang làm việc với thu nhập ổn định. Trong năm 2025, để đáp ứng nhu
+cầu sản xuất và triển khai các dự án mở rộng, Công ty cần tuyển dụng trên 3.000 nhân sự với
+nhiều ngành nghề, trình độ chuyên môn (chỉ tiết tai Thông báo tuyển dụng kèm theo).
+Nhằm đáp ứng nguồn nhân lực chất lượng cao làm việc tại Công ty, đồng thời tạo cơ
+hội việc làm cho sinh viên sau tốt nghiệp, bằng công văn nay, Céng ty kinh đề nghị Quý
+Đơn vị tiếp tục hỗ trợ Công ty trong việc chia sẻ và tuyên truyền thông tin tuyển dụng, cơ
+hội việc làm tại Công ty đến sinh viên qua Website, mạng xã hội và các kênh thông tin khác
+của Quý Đơn vị.
+Moi thông tin phản hồi và hỗ trợ xin liên hệ với Công ty qua:
+Số điện thoại: 02553.620.630 (Phím 1)
+Địa chỉ Email: tuyendungdungquat@hoaphat.com.vn
+Rat mong nhận được sự hỗ trợ từ Quý Đơn vị.
+Trân trọng cảm ơn./.</div>
             </div>
 
             <div class="section">
@@ -236,11 +263,39 @@
             <div class="section">
                 <div class="section-title">🔗 [3] KẾT QUẢ TÌM KIẾM</div>
                 <ul class="url-list">
-                    <li><strong>1.</strong> <a href="https://vi.wikipedia.org/wiki/Tập_đoàn_Hòa_Phát" target="_blank">https://vi.wikipedia.org/wiki/Tập_đoàn_Hòa_Phát</a></li>
-                    <li><strong>2.</strong> <a href="https://hoaphatdungquat.vn/" target="_blank">https://hoaphatdungquat.vn/</a></li>
+                    <li><strong>1.</strong> <a href="https://hoaphatdungquat.vn/" target="_blank">https://hoaphatdungquat.vn/</a></li>
+                    <li><strong>2.</strong> <a href="https://www.studocu.vn/vn/document/long-an-university-of-economics-and-industry/information-technology/10-pl01-qt0102-mau-van-ban-hanh-chinh-giay-uy-quyen-10/109393819" target="_blank">https://www.studocu.vn/vn/document/long-an-university-of-economics-and-industry/information-technology/10-pl01-qt0102-mau-van-ban-hanh-chinh-giay-uy-quyen-10/109393819</a></li>
                     <li><strong>3.</strong> <a href="https://masothue.com/4300793861-cong-ty-co-phan-thep-hoa-phat-dung-quat" target="_blank">https://masothue.com/4300793861-cong-ty-co-phan-thep-hoa-phat-dung-quat</a></li>
-                    <li><strong>4.</strong> <a href="https://baochinhphu.vn/thu-tuong-tham-thep-hoa-phat-dong-vien-san-xuat-ray-duong-sat-toc-do-cao-102250209210343753.htm" target="_blank">https://baochinhphu.vn/thu-tuong-tham-thep-hoa-phat-dong-vien-san-xuat-ray-duong-sat-toc-do-cao-102250209210343753.htm</a></li>
-                    <li><strong>5.</strong> <a href="https://www.hoaphat.com.vn/en" target="_blank">https://www.hoaphat.com.vn/en</a></li>
+                    <li><strong>4.</strong> <a href="https://file.hoaphat.com.vn/hoaphat-com-vn/uploads/CBTT-thanh-lap-cong-ty-Hoa-phat-Dung-Quat.pdf" target="_blank">https://file.hoaphat.com.vn/hoaphat-com-vn/uploads/CBTT-thanh-lap-cong-ty-Hoa-phat-Dung-Quat.pdf</a></li>
+                    <li><strong>5.</strong> <a href="https://tlu.edu.vn/Portals/0/2020-8/591HPDQ-P_NS.pdf?ver=2020-08-20-072449-917" target="_blank">https://tlu.edu.vn/Portals/0/2020-8/591HPDQ-P_NS.pdf?ver=2020-08-20-072449-917</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="result-title">📄 test.png</div>
+
+            <div class="section">
+                <div class="section-title">🔍 [1] VĂN BẢN GỐC (OCR)</div>
+                <div class="content">1:12 “pip install
+opency python" fails to
+find opencv python
+e</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">🎯 [2] TỪ KHÓA TÌM KIẾM</div>
+                <div class="content">1 12 pip install opency python fails to find opencv python e</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">🔗 [3] KẾT QUẢ TÌM KIẾM</div>
+                <ul class="url-list">
+                    <li><strong>1.</strong> <a href="https://forum.opencv.org/t/cannot-install-open-cv/12516" target="_blank">https://forum.opencv.org/t/cannot-install-open-cv/12516</a></li>
+                    <li><strong>2.</strong> <a href="https://pypi.org/project/opencv-python/" target="_blank">https://pypi.org/project/opencv-python/</a></li>
+                    <li><strong>3.</strong> <a href="https://github.com/opencv/opencv-python/issues/102" target="_blank">https://github.com/opencv/opencv-python/issues/102</a></li>
+                    <li><strong>4.</strong> <a href="https://tutorialreference.com/python/examples/faq/python-opencv-error-could-not-find-version-that-satisfies-requirement-cv2-opencv" target="_blank">https://tutorialreference.com/python/examples/faq/python-opencv-error-could-not-find-version-that-satisfies-requirement-cv2-opencv</a></li>
+                    <li><strong>5.</strong> <a href="https://stackoverflow.com/questions/58919182/getting-error-while-installing-opencv-via-pip" target="_blank">https://stackoverflow.com/questions/58919182/getting-error-while-installing-opencv-via-pip</a></li>
                 </ul>
             </div>
         </div>
@@ -250,7 +305,18 @@
 
             <div class="section">
                 <div class="section-title">🔍 [1] VĂN BẢN GỐC (OCR)</div>
-                <div class="content">c KHo org, N: “a Q aA £ G © àb = > la 2 k2 RG KHAO SAT NANG LUC LAP TRINH ‘Tan sinh viên - nam 2024 (Dé cả LÍ trang 16 bài)</div>
+                <div class="content">c KHo
+org,
+N: “a
+Q
+aA
+£ G
+© àb =
+> la 2
+k2 RG
+KHAO SAT NANG LUC LAP TRINH
+‘Tan sinh viên - nam 2024
+(Dé cả LÍ trang 16 bài)</div>
             </div>
 
             <div class="section">
@@ -261,11 +327,11 @@
             <div class="section">
                 <div class="section-title">🔗 [3] KẾT QUẢ TÌM KIẾM</div>
                 <ul class="url-list">
-                    <li><strong>1.</strong> <a href="https://www.facebook.com/fit.hcmus.hoatdong/posts/khảo-sát-năng-lực-lập-trình-đầu-khóa-cho-tân-sinh-viênsẵn-sàng-chưa-các-chiến-bi/1304524731467353/" target="_blank">https://www.facebook.com/fit.hcmus.hoatdong/posts/khảo-sát-năng-lực-lập-trình-đầu-khóa-cho-tân-sinh-viênsẵn-sàng-chưa-các-chiến-bi/1304524731467353/</a></li>
-                    <li><strong>2.</strong> <a href="https://www.facebook.com/fit.hcmus.hoatdong/posts/thông-tin-hoạt-động-khảo-sát-năng-lực-lập-trình-dành-cho-sinh-viên-chương-trình-/1035661821686980/" target="_blank">https://www.facebook.com/fit.hcmus.hoatdong/posts/thông-tin-hoạt-động-khảo-sát-năng-lực-lập-trình-dành-cho-sinh-viên-chương-trình-/1035661821686980/</a></li>
-                    <li><strong>3.</strong> <a href="https://luutruvn.com/wp-content/uploads/2024/10/Proceeding18_ver3.pdf" target="_blank">https://luutruvn.com/wp-content/uploads/2024/10/Proceeding18_ver3.pdf</a></li>
-                    <li><strong>4.</strong> <a href="https://csdlkhoahoc.hueuni.edu.vn/data/2025/8/Tap_chi_khoa_hoc_va_cong_nghe_Nguyen_tat_thanh_(1).pdf" target="_blank">https://csdlkhoahoc.hueuni.edu.vn/data/2025/8/Tap_chi_khoa_hoc_va_cong_nghe_Nguyen_tat_thanh_(1).pdf</a></li>
-                    <li><strong>5.</strong> <a href="https://vndoc.com/bo-de-on-tap-hoc-ki-2-mon-toan-lop-2-106091" target="_blank">https://vndoc.com/bo-de-on-tap-hoc-ki-2-mon-toan-lop-2-106091</a></li>
+                    <li><strong>1.</strong> <a href="https://vndoc.com/bo-de-on-tap-hoc-ki-2-mon-toan-lop-2-106091" target="_blank">https://vndoc.com/bo-de-on-tap-hoc-ki-2-mon-toan-lop-2-106091</a></li>
+                    <li><strong>2.</strong> <a href="https://vi.khanacademy.org/math/toan-lop-2-viet-nam" target="_blank">https://vi.khanacademy.org/math/toan-lop-2-viet-nam</a></li>
+                    <li><strong>3.</strong> <a href="https://khoahoc.vietjack.com/question/670425/kho-a-chua-nhieu-hon-kho-b-la-75-tan-gao-sau-khi-moi-kho-nhan-them-10-tan-gao-thi-so-gao-o-kho-b-ban" target="_blank">https://khoahoc.vietjack.com/question/670425/kho-a-chua-nhieu-hon-kho-b-la-75-tan-gao-sau-khi-moi-kho-nhan-them-10-tan-gao-thi-so-gao-o-kho-b-ban</a></li>
+                    <li><strong>4.</strong> <a href="https://hoidap247.com/cau-hoi/3854342" target="_blank">https://hoidap247.com/cau-hoi/3854342</a></li>
+                    <li><strong>5.</strong> <a href="https://fqa.vn/cau-hoi/6617dfba3e51a56afa378725" target="_blank">https://fqa.vn/cau-hoi/6617dfba3e51a56afa378725</a></li>
                 </ul>
             </div>
         </div>
@@ -275,5 +341,4 @@
         </div>
     </div>
 </body>
-
 </html>
