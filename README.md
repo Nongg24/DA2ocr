@@ -1,6 +1,5 @@
-# DA2OCR - Vietnamese Document OCR & AI Search Pipeline
-
-DA2OCR là pipeline nhận diện văn bản tiếng Việt (OCR) từ ảnh, trích xuất từ khóa thông minh với AI, và gợi ý link tra cứu trực tuyến.
+# DA2-OCR TOOL
+là 1 pipeline nhận diện văn bản tiếng Việt (OCR) từ ảnh, trích xuất từ khóa thông minh với AI, và gợi ý link tra cứu trực tuyến.
 
 ## 📦 Tính năng nổi bật
 - Nhận diện tiếng Việt/Anh từ ảnh bằng Tesseract
