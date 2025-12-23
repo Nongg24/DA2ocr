@@ -1,0 +1,2 @@
+pip install ddgs
+py -m pip install duckduckgo-search
