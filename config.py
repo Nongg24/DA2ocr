@@ -41,16 +41,19 @@ SEARCH_RETRY_DELAY = 2
 SUPPORTED_FORMATS = ('.png', '.jpg', '.jpeg', '. bmp', '.tiff', '.webp')
 
 # AI Prompt template
-AI_PROMPT_TEMPLATE = """Bạn là công cụ tối ưu hóa từ khóa tìm kiếm. 
+AI_PROMPT_TEMPLATE = """
+Bạn là chuyên gia lọc từ khóa tìm kiếm từ văn bản đã OCR. 
+Nhiệm vụ: Từ văn bản dưới đây, trích xuất những từ khoá/từ/cụm từ có ý nghĩa thực sự (tên đề, sự kiện, đối tượng, năm, v.v...). 
 
-Nhiệm vụ:  Trích xuất từ khóa tìm kiếm tốt nhất từ văn bản sau.  
+YÊU CẦU:
+- Chỉ giữ các cụm từ hoàn chỉnh, thông tin trọng tâm, tên, thuật ngữ, số, nơi chốn thực tế.
+- **LOẠI BỎ toàn bộ dòng/ký tự lạ, ký hiệu đặc biệt, từ vô nghĩa, tiếng ồn máy OCR (ví dụ: ký tự đơn lẻ như “Q”, “£ G”, “© àb =”, “aA”, “N:”, v.v...).**
+- Không dùng lại các dòng/chi tiết mà không tạo giá trị tìm kiếm trên web.
+- Không lặp lại nhiều lần cùng một ý.
+- Kết quả: Một danh sách từ khóa/từ/cụm từ, ngắn gọn dưới 18 từ, **không giải thích**, ngăn cách bằng dấu phẩy (,). 
 
-Yêu cầu: 
-- Từ khóa phải ngắn gọn (dưới 20 từ)
-- Giữ lại TẤT CẢ thông tin quan trọng (tên, từ viết tắt, số liệu)
-- Loại bỏ noise và thông tin không liên quan
-- Chỉ trả về từ khóa, KHÔNG giải thích
+Đầu vào:
+{text}
 
-Văn bản:  {text}
-
-Từ khóa: """
+Từ khóa:
+""".strip()

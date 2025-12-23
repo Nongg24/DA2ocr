@@ -1,123 +1,111 @@
 """
-AI Filter Module - Use Gemini to extract smart keywords with fallback
+AI Filter Module - Phiên bản MỞ KHÓA (Tắt Safety Filter & Tăng Max Tokens)
 """
 import requests
 import re
-from typing import Optional
+import time
+import json
 from logger import setup_logger
-from config import GEMINI_API_KEY, GEMINI_API_URL, AI_PROMPT_TEMPLATE
+from config import GEMINI_API_KEY, AI_PROMPT_TEMPLATE
 
 logger = setup_logger('Filter')
 
-
 class AIKeywordExtractor:
-    """AI-powered keyword extractor using Gemini with fallback"""
-    
     def __init__(self, api_key: str = GEMINI_API_KEY):
         self.api_key = api_key
-        self.api_url = f"{GEMINI_API_URL}?key={api_key}"
-        self.quota_exceeded = False
+        self.model_name = "gemini-2.5-flash" 
+        self.api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model_name}:generateContent?key={api_key}"
         
-        if not api_key or api_key == 'YOUR_API_KEY_HERE':
-            logger.warning("⚠️ No valid API key configured!")
-        else:
-            logger.info("AI Keyword Extractor initialized")
-    
+        if not api_key:
+            logger.warning("⚠️ Chưa cấu hình GEMINI_API_KEY!")
+
     def fallback_extract(self, text: str) -> str:
-        """
-        Simple fallback keyword extraction without AI
-        """
-        logger.info("Using fallback keyword extraction (no AI)")
-        
-        # Remove special characters but keep Vietnamese
+        """Phương án dự phòng"""
+        logger.info("Using fallback (No AI)")
         text = re.sub(r'[^\w\sàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ\-]', ' ', text)
         text = ' '.join(text.split())
-        
-        # Take first meaningful part (max 100 chars)
-        keyword = text[:100].strip()
-        
-        display_keyword = keyword[:50] + "..." if len(keyword) > 50 else keyword
-        logger.info(f"📝 Fallback keyword:  '{display_keyword}'")
-        return keyword
-    
-    def extract_keyword(self, raw_text: str, timeout: int = 15) -> str:
-        """
-        Extract keyword from text using AI with fallback
-        """
-        if not raw_text.strip():
-            logger.warning("Empty text provided")
-            return ""
-        
-        # If quota already exceeded, use fallback immediately
-        if self.quota_exceeded:
-            return self.fallback_extract(raw_text)
-        
-        if not self.api_key or self.api_key == 'YOUR_API_KEY_HERE': 
-            logger.warning("No valid API key, using fallback")
-            return self.fallback_extract(raw_text)
-        
-        logger.info("Sending request to Gemini API...")
-        
-        # Prepare prompt
-        prompt = AI_PROMPT_TEMPLATE.format(text=raw_text[: 1000])
+        return text[:100].strip()
+
+    def extract_keyword(self, raw_text: str, timeout: int = 60) -> str:
+        if not raw_text.strip(): return ""
+        if not self.api_key: return self.fallback_extract(raw_text)
+
+        max_retries = 3
+        prompt = AI_PROMPT_TEMPLATE.format(text=raw_text[:2500]) # Gửi nhiều text hơn chút
         
         headers = {'Content-Type': 'application/json'}
+        
+        # === CẤU HÌNH QUAN TRỌNG ĐỂ KHÔNG BỊ CẮT NGANG ===
         data = {
-            "contents": [{
-                "parts": [{"text": prompt}]
-            }],
+            "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {
                 "temperature": 0.3,
-                "maxOutputTokens": 100,
-            }
+                "maxOutputTokens": 500,  # Tăng lên 500 (trước là 100-200) để nó nói thoải mái
+            },
+            # TẮT BỘ LỌC AN TOÀN (Quan trọng nhất)
+            # Giúp AI không bị hoang tưởng khi thấy ký tự lạ từ OCR
+            "safetySettings": [
+                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
+            ]
         }
-        
-        try:
-            response = requests. post(
-                self.api_url,
-                headers=headers,
-                json=data,
-                timeout=timeout
-            )
-            
-            if response.status_code == 200:
-                result = response.json()
-                keyword = result['candidates'][0]['content']['parts'][0]['text']. strip()
-                keyword = keyword.replace('"', '').replace("'", "")
-                logger.info(f"✅ AI suggested:  '{keyword}'")
-                return keyword
-            
-            elif response.status_code == 429:
-                # Quota exceeded
-                logger.warning("⚠️ API quota exceeded, switching to fallback mode")
-                self.quota_exceeded = True
-                return self.fallback_extract(raw_text)
-            
-            else:
-                logger.error(f"❌ API Error ({response.status_code})")
-                return self.fallback_extract(raw_text)
-                
-        except requests. Timeout:
-            logger.error("❌ Request timeout, using fallback")
-            return self. fallback_extract(raw_text)
-            
-        except Exception as e:
-            logger.error(f"❌ Request failed: {e}, using fallback")
-            return self.fallback_extract(raw_text)
 
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(self.api_url, headers=headers, json=data, timeout=timeout)
+
+                if response.status_code == 200:
+                    result = response.json()
+                    
+                    # === DEBUG: Kiểm tra xem tại sao nó dừng ===
+                    try:
+                        candidate = result['candidates'][0]
+                        finish_reason = candidate.get('finishReason', 'UNKNOWN')
+                        
+                        # Nếu lý do dừng là SAFETY (An toàn) hoặc OTHER -> Cảnh báo
+                        if finish_reason != 'STOP':
+                            logger.warning(f"⚠️ AI dừng bất thường. Lý do: {finish_reason}")
+                        
+                        content_parts = candidate.get('content', {}).get('parts', [])
+                        if content_parts:
+                            keyword = content_parts[0]['text'].strip()
+                            # Làm sạch keyword
+                            keyword = keyword.replace('"', '').replace("'", "").replace("Search Query:", "").strip().split('\n')[0]
+                            
+                            if len(keyword) < 3: # Nếu AI trả về quá ngắn (kiểu 1-2 chữ)
+                                logger.warning("⚠️ AI trả về quá ngắn, thử lại...")
+                                continue
+
+                            logger.info(f"✅ Gemini suggested: '{keyword}'")
+                            return keyword
+                        else:
+                            # Trường hợp bị lọc sạch bách
+                            logger.warning(f"⚠️ AI trả về rỗng (Bị lọc). Lý do: {finish_reason}")
+                            continue
+
+                    except (KeyError, IndexError) as e:
+                        logger.error(f"❌ Lỗi đọc JSON (Lần {attempt+1}): {e}")
+                        # In thử JSON ra xem nó trả về cái quái gì
+                           # print(json.dumps(result, indent=2)) 
+                        time.sleep(2)
+                        continue
+
+                elif response.status_code == 429:
+                    logger.warning(f"⚠️ Hết lượt (429). Nghỉ 5s...")
+                    time.sleep(5)
+                    continue
+                else:
+                    logger.error(f"❌ API Error {response.status_code}")
+                    return self.fallback_extract(raw_text)
+
+            except Exception as e:
+                logger.error(f"❌ Lỗi mạng: {e}")
+                time.sleep(2)
+
+        return self.fallback_extract(raw_text)
 
 def get_smart_keyword(raw_text: str) -> str:
-    """Legacy function for backward compatibility"""
     extractor = AIKeywordExtractor()
     return extractor.extract_keyword(raw_text)
-
-
-if __name__ == "__main__": 
-    # Test
-    extractor = AIKeywordExtractor()
-    
-    test_text = "Bộ môn Giải tích - VI TÍCH PHÂN 1 - DHQG-HCM"
-    keyword = extractor.extract_keyword(test_text)
-    
-    print(f"\nOriginal:  {test_text}")
-    print(f"Keyword: {keyword}")

@@ -1,6 +1,6 @@
 ﻿======================================================================
  KẾT QUẢ XỬ LÝ: test.png
- Thời gian: 2025-12-23 11:56:49
+ Thời gian: 2025-12-23 14:40:06
 ======================================================================
 
 [1] VĂN BẢN GỐC (OCR)
@@ -13,15 +13,15 @@ e
 
 [2] TỪ KHÓA TÌM KIẾM (AI)
 ----------------------------------------------------------------------
-1 12 pip install opency python fails to find opencv python e
+pip install, opencv python
 
 [3] KẾT QUẢ TÌM KIẾM
 ----------------------------------------------------------------------
-1. https://forum.opencv.org/t/cannot-install-open-cv/12516
-2. https://pypi.org/project/opencv-python/
-3. https://github.com/opencv/opencv-python/issues/102
-4. https://tutorialreference.com/python/examples/faq/python-opencv-error-could-not-find-version-that-satisfies-requirement-cv2-opencv
-5. https://stackoverflow.com/questions/58919182/getting-error-while-installing-opencv-via-pip
+1. https://pypi.org/project/opencv-python/
+2. https://docs.opencv.org/4.x/db/dd1/tutorial_py_pip_install.html
+3. https://pypi.org/project/opencv-python-headless/
+4. https://pypi.org/project/opencv-contrib-python/
+5. https://pypi.org/project/opencv-contrib-python-headless/
 
 ======================================================================
 Xử lý hoàn tất!

@@ -871,3 +871,106 @@
 2025-12-23 11:56:45 - Filter - INFO - 📝 Fallback keyword:  '1 12 pip install opency python fails to find openc...'
 2025-12-23 11:56:51 - Filter - INFO - Using fallback keyword extraction (no AI)
 2025-12-23 11:56:51 - Filter - INFO - 📝 Fallback keyword:  'c KHo org N a Q aA G àb la 2 k2 RG KHAO SAT NANG L...'
+2025-12-23 12:04:34 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:04:34 - Filter - INFO - Sending request to Gemini API...
+2025-12-23 12:04:35 - Filter - WARNING - ⚠️ API quota exceeded, switching to fallback mode
+2025-12-23 12:04:35 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:04:35 - Filter - INFO - 📝 Fallback keyword:  'ECHOES OF TOMORROW'
+2025-12-23 12:04:42 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:04:42 - Filter - INFO - 📝 Fallback keyword:  'A or _ QC KHO lo 4 Khoa Toán - Tin học ĐHQG-HCM Fa...'
+2025-12-23 12:04:48 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:04:48 - Filter - INFO - 📝 Fallback keyword:  'CÔNG TY CỎ PHÀN THÉP CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆ...'
+2025-12-23 12:04:53 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:04:53 - Filter - INFO - 📝 Fallback keyword:  '1 12 pip install opency python fails to find openc...'
+2025-12-23 12:04:57 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:04:57 - Filter - INFO - 📝 Fallback keyword:  'c KHo org N a Q aA G àb la 2 k2 RG KHAO SAT NANG L...'
+2025-12-23 12:06:48 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:06:49 - Filter - INFO - Sending request to Gemini API...
+2025-12-23 12:06:49 - Filter - WARNING - ⚠️ API quota exceeded, switching to fallback mode
+2025-12-23 12:06:49 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:06:49 - Filter - INFO - 📝 Fallback keyword:  'ECHOES OF TOMORROW'
+2025-12-23 12:06:55 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:06:55 - Filter - INFO - 📝 Fallback keyword:  'A or _ QC KHO lo 4 Khoa Toán - Tin học ĐHQG-HCM Fa...'
+2025-12-23 12:07:01 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:07:01 - Filter - INFO - 📝 Fallback keyword:  'CÔNG TY CỎ PHÀN THÉP CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆ...'
+2025-12-23 12:07:06 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:07:06 - Filter - INFO - 📝 Fallback keyword:  '1 12 pip install opency python fails to find openc...'
+2025-12-23 12:07:10 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:07:10 - Filter - INFO - 📝 Fallback keyword:  'c KHo org N a Q aA G àb la 2 k2 RG KHAO SAT NANG L...'
+2025-12-23 12:13:03 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:13:03 - Filter - INFO - Sending request to Gemini API with clean text...
+2025-12-23 12:13:04 - Filter - WARNING - ⚠️ API quota exceeded, switching to fallback mode
+2025-12-23 12:13:04 - Filter - INFO - Using fallback keyword extraction (no AI, strong noise cleaning)
+2025-12-23 12:13:04 - Filter - INFO - 📝 Fallback keyword: 'ECHOES, OF, TOMORROW'
+2025-12-23 12:13:10 - Filter - INFO - Using fallback keyword extraction (no AI, strong noise cleaning)
+2025-12-23 12:13:10 - Filter - INFO - 📝 Fallback keyword: 'QC, KHO, lo, Khoa, Toán, Tin, học., ĐHQG-HCM., Fac., of, Math,, Computer, Science, Bộ, môn, Giải, tích, VI'
+2025-12-23 12:13:15 - Filter - INFO - Using fallback keyword extraction (no AI, strong noise cleaning)
+2025-12-23 12:13:15 - Filter - INFO - 📝 Fallback keyword: 'CÔNG, TY, CỎ, PHÀN, THÉP., CỌNG, HÒA, XÃ, HỘI, CHỦ, NGHĨA, VIỆT, NAM, PHÁT, DUNG, QUÁT, Độc, lập'
+2025-12-23 12:13:20 - Filter - INFO - Using fallback keyword extraction (no AI, strong noise cleaning)
+2025-12-23 12:13:20 - Filter - INFO - 📝 Fallback keyword: '12, pip, install, opency, python, fails, to, find, opencv'
+2025-12-23 12:13:24 - Filter - INFO - Using fallback keyword extraction (no AI, strong noise cleaning)
+2025-12-23 12:13:24 - Filter - INFO - 📝 Fallback keyword: 'KHo, org,, àb, la, k2, RG, KHAO, SAT, NANG, LUC, LAP, TRINH, Tan, sinh, viên, nam, 2024, Dé'
+2025-12-23 12:16:31 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:16:32 - Filter - INFO - Sending request to Gemini API...
+2025-12-23 12:16:32 - Filter - WARNING - ⚠️ API quota exceeded, switching to fallback mode
+2025-12-23 12:16:32 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:16:32 - Filter - INFO - 📝 Fallback keyword:  'ECHOES OF TOMORROW'
+2025-12-23 12:16:38 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:16:38 - Filter - INFO - 📝 Fallback keyword:  'CÔNG TY CỎ PHÀN THÉP CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆ...'
+2025-12-23 12:16:44 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:16:44 - Filter - INFO - 📝 Fallback keyword:  '1 12 pip install opency python fails to find openc...'
+2025-12-23 12:16:48 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:16:48 - Filter - INFO - 📝 Fallback keyword:  'c KHo org N a Q aA G àb la 2 k2 RG KHAO SAT NANG L...'
+2025-12-23 12:19:07 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:19:08 - Filter - INFO - Sending request to Gemini API...
+2025-12-23 12:19:09 - Filter - WARNING - ⚠️ API quota exceeded, switching to fallback mode
+2025-12-23 12:19:09 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:19:09 - Filter - INFO - 📝 Fallback keyword:  'LES MISERABLES BY VICTOR HUGO TRANSLATED FROM THE ...'
+2025-12-23 12:19:15 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:19:15 - Filter - INFO - 📝 Fallback keyword:  'CÔNG TY CỎ PHÀN THÉP CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆ...'
+2025-12-23 12:19:19 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:19:19 - Filter - INFO - 📝 Fallback keyword:  'Superb The beauty of Aciman writing and the purity...'
+2025-12-23 12:19:22 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:19:22 - Filter - INFO - 📝 Fallback keyword:  '1 12 pip install opency python fails to find openc...'
+2025-12-23 12:20:26 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:20:27 - Filter - INFO - Sending request to Gemini API...
+2025-12-23 12:20:28 - Filter - WARNING - ⚠️ API quota exceeded, switching to fallback mode
+2025-12-23 12:20:28 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:20:28 - Filter - INFO - 📝 Fallback keyword:  'LES MISERABLES BY VICTOR HUGO TRANSLATED FROM THE ...'
+2025-12-23 12:20:34 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:20:34 - Filter - INFO - 📝 Fallback keyword:  'CÔNG TY CỎ PHÀN THÉP CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆ...'
+2025-12-23 12:20:40 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:20:40 - Filter - INFO - 📝 Fallback keyword:  'Superb The beauty of Aciman writing and the purity...'
+2025-12-23 12:20:45 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:20:45 - Filter - INFO - 📝 Fallback keyword:  '1 12 pip install opency python fails to find openc...'
+2025-12-23 12:28:42 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:28:43 - Filter - INFO - Sending request to Gemini API...
+2025-12-23 12:28:44 - Filter - WARNING - ⚠️ API quota exceeded, switching to fallback mode
+2025-12-23 12:28:44 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:28:44 - Filter - INFO - 📝 Fallback keyword:  'LES MISERABLES BY VICTOR HUGO TRANSLATED FROM THE ...'
+2025-12-23 12:28:56 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:28:56 - Filter - INFO - 📝 Fallback keyword:  'CÔNG TY CỎ PHÀN THÉP CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆ...'
+2025-12-23 12:29:01 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:29:01 - Filter - INFO - 📝 Fallback keyword:  'Superb The beauty of Aciman writing and the purity...'
+2025-12-23 12:29:06 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:29:06 - Filter - INFO - 📝 Fallback keyword:  '1 12 pip install opency python fails to find openc...'
+2025-12-23 12:31:36 - Filter - INFO - AI Keyword Extractor initialized
+2025-12-23 12:31:37 - Filter - INFO - Sending request to Gemini API...
+2025-12-23 12:31:38 - Filter - ERROR - ❌ API Error (400)
+2025-12-23 12:31:38 - Filter - INFO - Using fallback keyword extraction (no AI)
+2025-12-23 12:31:38 - Filter - INFO - 📝 Fallback keyword:  'LES MISERABLES BY VICTOR HUGO TRANSLATED FROM THE ...'
+2025-12-23 14:37:51 - Filter - ERROR - ❌ API Error 400
+2025-12-23 14:37:51 - Filter - INFO - Using fallback (No AI)
+2025-12-23 14:38:01 - Filter - ERROR - ❌ API Error 400
+2025-12-23 14:38:01 - Filter - INFO - Using fallback (No AI)
+2025-12-23 14:38:06 - Filter - ERROR - ❌ API Error 400
+2025-12-23 14:38:06 - Filter - INFO - Using fallback (No AI)
+2025-12-23 14:38:12 - Filter - ERROR - ❌ API Error 400
+2025-12-23 14:38:12 - Filter - INFO - Using fallback (No AI)
+2025-12-23 14:39:37 - Filter - WARNING - ⚠️ AI dừng bất thường. Lý do: MAX_TOKENS
+2025-12-23 14:39:37 - Filter - INFO - ✅ Gemini suggested: 'LES MISERABLES, Victor Hugo, Isabel F. Hapgood, Five Volumes, Vol'
+2025-12-23 14:39:49 - Filter - WARNING - ⚠️ AI dừng bất thường. Lý do: MAX_TOKENS
+2025-12-23 14:39:49 - Filter - INFO - ✅ Gemini suggested: 'Hòa Phát Dung Quất, tuyển dụng, 2024,'
+2025-12-23 14:39:57 - Filter - WARNING - ⚠️ AI dừng bất thường. Lý do: MAX_TOKENS
+2025-12-23 14:39:57 - Filter - INFO - ✅ Gemini suggested: 'Aciman, Call Me by Your Name, CHARLES KAISER, The Washington Post Book World'
+2025-12-23 14:40:04 - Filter - INFO - ✅ Gemini suggested: 'pip install, opencv python'
